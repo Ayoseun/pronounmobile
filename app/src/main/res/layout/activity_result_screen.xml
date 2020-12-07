@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:background="@color/colornewAccent"
+    android:layout_height="match_parent"
+    tools:context=".questionaires.ResultScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:layout_weight="1"
+        android:elevation="5dp"
+
+        android:background="@color/colornewAccent"
+        android:layout_marginHorizontal="5dp"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_weight="0.01"
+            android:textColor="#FFFFFF"
+            android:shadowColor="#333333"
+            android:shadowRadius="15"
+            android:shadowDy="4"
+            android:shadowDx="7"
+            android:gravity="center_horizontal"
+            android:text="Result"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:layout_weight="0.01"
+            android:gravity="center_horizontal"
+            android:padding="15dp"
+            android:shadowColor="#8A8A8A"
+            android:shadowRadius="15"
+            android:shadowDy="4"
+            android:shadowDx="7"
+            android:textColor="#FFFFFF"
+            android:text="Hurray , Musa you just completed part  A of this course past question"
+            android:textAlignment="center"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="4"
+            android:layout_marginHorizontal="33dp"
+            android:src="@drawable/asses" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.001"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="70 / 70 \npoints"
+            android:shadowColor="#8A8A8A"
+            android:shadowRadius="15"
+            android:shadowDy="4"
+            android:shadowDx="7"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/butf"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="95dp"
+        android:layout_weight="0.04"
+
+        android:layout_marginBottom="75dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape8"
+
+        android:text="Past Questions"
+
+        android:textColor="@color/colorAccent"
+        android:textSize="13sp"
+        />
+</LinearLayout>

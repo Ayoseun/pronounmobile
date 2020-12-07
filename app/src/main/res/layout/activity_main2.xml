@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colornewAccent"
+    tools:context=".utils.LoginSignupActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_weight="0.0009"
+        android:layout_gravity="center"
+        android:text="welcome "
+        android:textColor="#FFF"
+        android:textSize="23sp"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="0.04"
+        android:weightSum="3"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/shape2"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="12dp"
+            android:background="#00FFFFFF"
+android:weightSum="2"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="login"
+                android:textAlignment="center"
+                android:background="#00FFFFFF"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:id="@+id/log"
+                android:textColor="#0ed145"
+                android:textStyle="bold"
+                android:gravity="center" />
+   <Button
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:text="signup"
+       android:id="@+id/sig"
+       android:background="#00FFFFFF"
+       android:layout_weight="1"
+    android:textSize="15dp"
+       android:gravity="center"
+    android:textColor="#9ACCCCCC"
+    android:textStyle="bold"/>
+        </LinearLayout>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/deePager"
+            android:layout_width="match_parent"
+            android:layout_height="452dp"
+            android:layout_weight="1"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR \n sign in with"
+            android:textAlignment="center"
+            android:textColor="#535353"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:background="#00FFFFFF"
+        android:layout_weight="0.04"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+
+
+
+
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center"
+            android:padding="15dp"
+           android:layout_marginHorizontal="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/facebook"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:id="@+id/goo"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:padding="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/google"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:src="@drawable/twitter"/>
+
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

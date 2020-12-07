@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:fillViewport="true"
+    tools:context=".model.signup">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:hint="email"
+
+            android:drawablePadding="10dp"
+            android:paddingStart="10dp"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginTop="115dp"
+            android:textColorHint="#312C9D65"
+            android:background="@drawable/shape4"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="15dp"
+            android:textSize="12sp"
+            android:drawableLeft="@drawable/ass" />
+
+        <EditText
+        android:drawableStart="@drawable/ic_baseline_local_phone_24"
+        android:drawablePadding="10dp"
+        android:textSize="12sp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/phne"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/shape4"
+        android:hint="Phone"
+        android:layout_marginHorizontal="45dp"
+        android:paddingStart="12dp"
+        android:paddingLeft="12dp"
+        android:layout_marginTop="45dp"
+        android:textColorHint="#312C9D65"
+        android:drawableLeft="@drawable/ic_baseline_email_24" />
+
+        <Button
+            android:drawableStart="@drawable/ic_baseline_school_24"
+            android:drawablePadding="10dp"
+            android:textSize="12sp"
+            android:layout_gravity="start"
+            android:id="@+id/fac"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#00FFFFFF"
+            android:text="Faculty"
+            android:layout_marginHorizontal="45dp"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:layout_marginTop="45dp"
+
+            android:drawableLeft="@drawable/ic_baseline_email_24" />
+        <Button
+            android:drawableStart="@drawable/ic_baseline_school_24"
+            android:drawablePadding="10dp"
+            android:textSize="12sp"
+            android:layout_gravity="start"
+            android:id="@+id/dept"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#00FFFFFF"
+            android:text="Department"
+            android:layout_marginHorizontal="45dp"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:layout_marginTop="45dp"
+
+            android:drawableLeft="@drawable/ic_baseline_email_24" />
+        <Button
+            android:drawableStart="@drawable/ic_baseline_show_chart_24"
+            android:drawablePadding="10dp"
+            android:textSize="12sp"
+            android:id="@+id/lvl"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#00FFFFFF"
+            android:text="Level"
+            android:textAlignment="viewStart"
+            android:layout_marginHorizontal="45dp"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:layout_marginTop="45dp"
+            android:textColorHint="#312C9D65"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+           android:layout_gravity="start" />
+        <EditText
+
+            android:drawablePadding="10dp"
+            android:textSize="12sp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/firstname"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/shape4"
+            android:hint="FirstName"
+            android:layout_marginHorizontal="45dp"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:layout_marginTop="45dp"
+            android:textColorHint="#312C9D65"
+            />
+        <EditText
+
+            android:drawablePadding="10dp"
+            android:textSize="12sp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/LastName"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/shape4"
+            android:hint="Last Nmae"
+            android:layout_marginHorizontal="45dp"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:layout_marginTop="45dp"
+            android:textColorHint="#312C9D65" />
+        <EditText
+            android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+            android:drawablePadding="10dp"
+            android:textSize="12sp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/passwrd"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/shape4"
+            android:hint="Password"
+            android:layout_marginHorizontal="45dp"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:layout_marginTop="45dp"
+            android:textColorHint="#312C9D65"
+            android:drawableLeft="@drawable/ic_baseline_email_24" />
+
+        <EditText
+            android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+            android:drawablePadding="10dp"
+            android:textSize="12sp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/conpasswrd"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/shape4"
+            android:hint="Confirm Password"
+            android:layout_marginHorizontal="45dp"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:layout_marginTop="45dp"
+            android:textColorHint="#312C9D65"
+            android:drawableLeft="@drawable/ic_baseline_email_24" />
+
+        <Button
+            android:id="@+id/butLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="65dp"
+            android:layout_marginTop="45dp"
+
+            android:background="@drawable/shape3"
+            android:padding="1dp"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

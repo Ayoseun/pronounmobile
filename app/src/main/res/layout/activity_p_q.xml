@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".questionaires.PQActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+
+            android:paddingHorizontal="25dp"
+            android:weightSum="8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="25dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:max="8"
+                    android:progress="-1"
+                    android:progressDrawable="@drawable/shape6" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/ic_baseline_schedule_24" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/quesDis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="65dp"
+                android:paddingVertical="5sp"
+                android:shadowColor="#C5EDD9"
+                android:shadowDy="5"
+                android:shadowRadius="15"
+                android:text="Question 1/70"
+                android:textColor="@color/colornewAccent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/solve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="85dp"
+                android:layout_weight="1"
+                android:background="#4DFFFCFC"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="5sp"
+                android:shadowColor="#C8C8C8"
+                android:shadowDx="7"
+                android:shadowDy="4"
+                android:shadowRadius="15"
+                android:text="What attraction in Montreal is one of the largest in the world"
+                android:textAlignment="center"
+                android:textColor="#000000"
+
+
+                android:textSize="15sp" />
+        <LinearLayout
+            android:id="@+id/l"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:elevation="11dp"
+            android:outlineAmbientShadowColor="@color/colornewAccent"
+            android:background="#FCFFFF"
+
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:layout_weight="0.37"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RadioButton
+                    android:id="@+id/rB1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+
+                    android:layout_weight="0.15"
+
+                    android:buttonTint="#E3E3E3"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingVertical="12dp"
+                    android:shadowColor="#54BCEABE"
+                    android:shadowDy="2"
+                    android:shadowRadius="8"
+                    android:text="The Botanical Farden"
+                    android:textAlignment="gravity"
+                    android:textColor="#C3C3C3"
+                    android:textFontWeight="1"
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:id="@+id/rB2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+
+                    android:layout_weight="0.15"
+
+                    android:buttonTint="#E3E3E3"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingVertical="12dp"
+                    android:shadowColor="#54BCEABE"
+                    android:shadowDy="2"
+                    android:shadowRadius="8"
+                    android:text="The Botanical Farden"
+                    android:textAlignment="gravity"
+                    android:textColor="#C3C3C3"
+                    android:textFontWeight="1"
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:id="@+id/rB3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+
+                    android:layout_weight="0.15"
+
+                    android:buttonTint="#E3E3E3"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingVertical="12dp"
+                    android:shadowColor="#54BCEABE"
+                    android:shadowDy="2"
+                    android:shadowRadius="8"
+                    android:text="The Botanical Farden"
+                    android:textAlignment="gravity"
+                    android:textColor="#C3C3C3"
+                    android:textFontWeight="1"
+                    android:textSize="15sp" />
+                <RadioButton
+                    android:id="@+id/rB4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+
+                    android:layout_weight="0.15"
+
+                    android:buttonTint="#E3E3E3"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:paddingVertical="12dp"
+                    android:shadowColor="#54BCEABE"
+                    android:shadowDy="2"
+                    android:shadowRadius="8"
+                    android:text="The Botanical Farden"
+                    android:textAlignment="gravity"
+                    android:textColor="#C3C3C3"
+                    android:textFontWeight="1"
+                    android:textSize="15sp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/butMIt"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginHorizontal="75dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape3"
+                android:text="next"
+
+                android:textColor="#FFFFFF"
+                android:textSize="23sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
