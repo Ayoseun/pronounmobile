@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".UserData.signup">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:isScrollContainer="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+            <LinearLayout
+
+                android:id="@+id/linearLayout10"
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/emailer"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="35dp"
+                    android:layout_marginTop="65dp"
+                    android:background="@drawable/shape4"
+                    android:cursorVisible="true"
+                    android:drawableStart="@drawable/ic_baseline_email_24"
+
+                    android:drawablePadding="10dp"
+                    android:hint="email"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="15dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#CEA6B8AF"
+                    android:textCursorDrawable="@null"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/phoner"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="35dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/shape4"
+                    android:drawableStart="@drawable/ic_baseline_local_phone_24"
+                    android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+                    android:drawablePadding="10dp"
+                    android:hint="Phone"
+                    android:inputType="number"
+                    android:paddingStart="12dp"
+                    android:paddingLeft="12dp"
+                    android:pointerIcon="vertical_text"
+                    android:textColor="#000000"
+                    android:textColorHint="#CEA6B8AF"
+                    android:textCursorDrawable="@null"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="35dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/shape4"
+                    android:cursorVisible="true"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="10dp"
+                    android:hint="name"
+                    android:paddingStart="12dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#CEA6B8AF"
+                    android:textCursorDrawable="@null"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/pasw2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="35dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/shape4"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="10dp"
+                    android:hint="Surname"
+                    android:paddingStart="12dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#CEA6B8AF"
+                    android:textCursorDrawable="@null"
+                    android:textSize="12sp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/dept"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="35dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/shape4"
+                    android:completionThreshold="1"
+                    android:drawableStart="@drawable/ic_baseline_school_24"
+                    android:drawableLeft="@drawable/ic_baseline_school_24"
+                    android:drawablePadding="10dp"
+                    android:hint=" pick your department"
+                    android:inputType="text"
+                    android:paddingStart="12dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#CEA6B8AF"
+                    android:textCursorDrawable="@null"
+                    android:textSize="12sp" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="35dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/lvl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:layout_marginEnd="16dp"
+                        android:background="#00FFFFFF"
+                        android:drawableStart="@drawable/ic_baseline_show_chart_24"
+                        android:drawablePadding="10dp"
+                        android:hint="Click here to select Level"
+                        android:textColorHint="@color/dead_green"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@id/lvl2"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <Button
+                        android:id="@+id/lvl2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginStart="16dp"
+                        android:background="#00FFFFFF"
+
+                        android:drawablePadding="10dp"
+                        android:hint="Click here to select Semester"
+                        android:textColorHint="@color/dead_green"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/lvl"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <EditText
+                    android:id="@+id/passcord"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="35dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/shape4"
+                    android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+                    android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+                    android:drawablePadding="10dp"
+                    android:hint="Password"
+                    android:paddingStart="12dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#CEA6B8AF"
+                    android:textCursorDrawable="@null"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/conpasscord"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="35dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/shape4"
+                    android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+                    android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+                    android:drawablePadding="10dp"
+                    android:hint="Confirm Password"
+                    android:paddingStart="12dp"
+                    android:paddingLeft="12dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#CEA6B8AF"
+                    android:textCursorDrawable="@null"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/butSig"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="65dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginBottom="25dp"
+                    android:background="@drawable/shape3"
+                    android:padding="1dp"
+                    android:text="SignUp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/shower2"
+        android:visibility="gone"
+        android:elevation="12dp"
+        android:background="#00526474"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:background="#00526474"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+
+            app:cardCornerRadius="100dp"
+            app:cardElevation="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/loads"
+                app:lottie_repeatCount="55"
+                app:lottie_scale="0.45" />
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

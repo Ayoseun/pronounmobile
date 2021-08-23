@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".paystack.Payment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#12526474"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardElevation="2dp"
+            android:layout_gravity="bottom"
+            android:layout_height="500dp"
+            android:layout_marginHorizontal="2dp"
+            app:cardCornerRadius="8dp"
+            android:backgroundTint="#00526474">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/exp"
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="35dp"
+        android:background="@drawable/shape4s"
+        android:cursorVisible="true"
+        android:drawableStart="@drawable/ic_baseline_credit_card_24"
+
+        android:drawablePadding="10dp"
+        android:hint="Card number"
+        android:paddingStart="10dp"
+        android:paddingLeft="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#CEA6B8AF"
+        android:textCursorDrawable="@null"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exp"
+        app:layout_constraintVertical_bias="0.19">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cvv"
+
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="7.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape4s"
+            android:cursorVisible="true"
+            android:drawableStart="@drawable/ic_baseline_person_pin_24"
+
+            android:drawablePadding="10dp"
+            android:hint="cvv"
+            android:paddingStart="10dp"
+            android:paddingLeft="15dp"
+            android:textColor="#000000"
+            android:textColorHint="#CEA6B8AF"
+            android:textCursorDrawable="@null"
+            android:textSize="12sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/expory"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="7.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape4s"
+            android:cursorVisible="true"
+            android:drawableStart="@drawable/ic_baseline_person_pin_24"
+
+            android:drawablePadding="10dp"
+            android:hint="expiry Date"
+            android:paddingStart="10dp"
+            android:paddingLeft="15dp"
+            android:textColor="#000000"
+            android:textColorHint="#CEA6B8AF"
+            android:textCursorDrawable="@null"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="65dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape3"
+        android:padding="1dp"
+        android:text="Pay"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout14" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="300dp"
+            android:layout_marginHorizontal="100dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="50dp"
+            android:backgroundTint="@color/colornewAccent">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">.
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scaleType="centerCrop"
+        android:alpha=".03"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/png" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:shadowColor="#54BCEABE"
+            android:shadowDy="2"
+            android:shadowRadius="8"
+            android:text="Musa"
+            android:textAlignment="gravity"
+            android:textColor="@color/tint"
+            android:textFontWeight="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:shadowColor="#54BCEABE"
+            android:shadowDy="2"
+
+            android:shadowRadius="8"
+            android:text="Economics"
+            android:textAlignment="gravity"
+            android:textColor="#C3C3C3"
+            android:textFontWeight="1"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView30"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:shadowColor="#54BCEABE"
+            android:shadowDy="2"
+            android:shadowRadius="8"
+
+            android:text="Ibrahim"
+            android:textAlignment="gravity"
+            android:textColor="#C3C3C3"
+            android:textFontWeight="1"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView28"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView28"
+            app:layout_constraintTop_toTopOf="@+id/textView28" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="PAID"
+            android:shadowColor="#54BCEABE"
+            android:shadowDy="2"
+            android:shadowRadius="8"
+            android:fontFamily="@font/allerta"
+           android:textStyle="bold"
+            android:textAlignment="gravity"
+            android:textColor="@color/colorGold"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView29"
+            app:layout_constraintVertical_bias="0.48000002" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

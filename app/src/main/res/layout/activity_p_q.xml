@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB"
+    tools:context=".questionaires.PQActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+            android:text="E-exam"
+            android:textAlignment="center"
+            android:textColor="@color/tint"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.29"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+
+            android:layout_marginTop="5dp"
+            android:gravity="bottom"
+            android:paddingVertical="5dp"
+            android:text="Past-Quesion practice"
+            android:textColor="#C3C3C3"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView14"
+            app:layout_constraintStart_toEndOf="@+id/textView14"
+            app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+        <LinearLayout
+            android:id="@+id/linea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="32dp"
+            android:background="@drawable/shape99"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="5dp"
+                android:text="Bus101"
+                android:textColor="@color/colornewAccent"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+
+
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="80dp"
+            android:background="#F1F1F1"
+            android:max="8"
+            android:progress="5"
+
+            android:progressDrawable="@drawable/shape6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/linea"
+            app:layout_constraintTop_toBottomOf="@+id/linea" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/ltview"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginEnd="16dp"
+
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/progressBar"
+            app:layout_constraintTop_toTopOf="@+id/progressBar"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/hour"
+            app:lottie_scale="0.45"
+            app:tint="@color/tint" />
+
+        <TextView
+            android:id="@+id/quesDis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingVertical="5sp"
+            android:shadowColor="#72526474"
+            android:shadowDy="5"
+            android:shadowRadius="7"
+            android:text="Question 1/70"
+            android:textColor="@color/tint"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/progressBar"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+        <TextView
+
+            android:id="@+id/solve"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+
+            android:layout_marginTop="32dp"
+            android:background="#4DFFFCFC"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="5sp"
+            android:shadowColor="#C8C8C8"
+            android:shadowDx="7"
+
+
+            android:shadowDy="4"
+            android:shadowRadius="15"
+            android:text="What attraction in Montreal is one of the largest in the world"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quesDis" />
+
+
+        <LinearLayout
+            android:id="@+id/l"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="#F1F1F1"
+            android:elevation="8dp"
+            android:layoutAnimation="@anim/layout_resource_bottom"
+            android:orientation="vertical"
+            android:outlineAmbientShadowColor="@color/colornewAccent"
+            app:layout_constraintBottom_toTopOf="@+id/butMIt"
+            app:layout_constraintEnd_toEndOf="@+id/solve"
+            app:layout_constraintStart_toStartOf="@+id/solve"
+            app:layout_constraintTop_toBottomOf="@+id/solve"
+            app:layout_constraintVertical_bias="0.51">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lt1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        app:lottie_rawRes="@raw/check"
+                        app:lottie_scale="0.45" />
+
+                    <RadioButton
+                        android:id="@+id/rB1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="0.15"
+                        android:button="@raw/check"
+                        android:buttonTint="#E3E3E3"
+                        android:checked="false"
+
+                        android:gravity="center"
+                        android:paddingVertical="12dp"
+                        android:shadowColor="#54BCEABE"
+                        android:shadowDy="2"
+                        android:shadowRadius="8"
+                        android:text="The Botanical Farden"
+                        android:textAlignment="gravity"
+                        android:textColor="#C3C3C3"
+                        android:textFontWeight="1"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        app:lottie_rawRes="@raw/check"
+                        app:lottie_scale="0.45" />
+
+                    <RadioButton
+                        android:id="@+id/rB2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="0.15"
+                        android:button="@raw/check"
+
+                        android:buttonTint="#E3E3E3"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:paddingVertical="12dp"
+                        android:shadowColor="#54BCEABE"
+                        android:shadowDy="2"
+                        android:shadowRadius="8"
+                        android:text="The Botanical Farden"
+                        android:textAlignment="gravity"
+                        android:textColor="#C3C3C3"
+                        android:textFontWeight="1"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lt3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        app:lottie_rawRes="@raw/check"
+                        app:lottie_scale="0.45" />
+
+                    <RadioButton
+                        android:id="@+id/rB3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="0.15"
+                        android:button="@raw/check"
+
+                        android:buttonTint="#E3E3E3"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:paddingVertical="12dp"
+                        android:shadowColor="#54BCEABE"
+                        android:shadowDy="2"
+                        android:shadowRadius="8"
+                        android:text="The Botanical Farden"
+                        android:textAlignment="gravity"
+                        android:textColor="#C3C3C3"
+                        android:textFontWeight="1"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"
+                        android:scaleType="center"
+                        app:lottie_rawRes="@raw/check"
+                        app:lottie_scale="0.45" />
+
+                    <RadioButton
+                        android:id="@+id/rB4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_weight="0.15"
+                        android:button="@raw/check"
+
+                        android:buttonTint="#E3E3E3"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:paddingVertical="12dp"
+                        android:shadowColor="#54BCEABE"
+                        android:shadowDy="2"
+                        android:shadowRadius="8"
+                        android:text="The Botanical Farden"
+                        android:textAlignment="gravity"
+                        android:textColor="#C3C3C3"
+                        android:textFontWeight="1"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/butMIt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/shape3"
+            android:elevation="13dp"
+
+            android:text="next"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/slim"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/shape2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+                android:shadowColor="#E4E4E4"
+                android:shadowDx="7"
+                android:shadowDy="4"
+                android:shadowRadius="15"
+                android:text="Correct answer "
+                android:textAlignment="gravity"
+                android:textColor="#C1C1C1"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="15dp"
+
+                android:gravity="center_horizontal"
+                android:shadowColor="#8A8A8A"
+                android:shadowDx="7"
+                android:shadowDy="4"
+                android:shadowRadius="15"
+                android:text="Good Job! "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/butLogin2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="65dp"
+
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/shape3"
+
+                android:text="Continue"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lor"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:elevation="9dp"
+            android:padding="12dp"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:lottie_rawRes="@raw/celebration_animation" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

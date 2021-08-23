@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<item
+
+    android:id="@+id/first"
+    android:iconTint="@color/colornewAccent"
+    android:title="1st Semester"
+android:visible="true"
+    android:enabled="true"
+    android:checkable="true"
+    />
+    <item
+        android:enabled="true"
+        android:visible="true"
+        android:id="@+id/second"
+        android:iconTint="@color/colornewAccent"
+        android:title="2nd semester"
+        android:checkable="true"/>
+
+
+</menu>

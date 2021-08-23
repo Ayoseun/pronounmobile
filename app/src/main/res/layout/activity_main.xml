@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context=".view.SplashActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00009106"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginBottom="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/prn"
+            android:layout_width="match_parent"
+            android:layout_height="252dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="56dp"
+            android:layout_weight="1"
+            android:background="#0003DAC5"
+            android:gravity="center"
+            android:padding="60dp"
+            android:layout_marginBottom="11dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/newlogo"
+            android:text="Pronoun"
+            android:textColor="@color/colornewAccent"
+            android:textSize="43sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:alpha="0.3"
+        android:gravity="center"
+        android:shadowRadius="5"
+        android:shadowDy="3"
+        android:shadowDx="1"
+        android:text="from \nMushroom"
+        android:textColor="#B92C9D65"
+        android:textSize="17sp"
+        android:shadowColor="@color/dead_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

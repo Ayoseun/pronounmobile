@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:isScrollContainer="false"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".view.PqFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="end"
+
+        android:layout_marginHorizontal="5dp"
+        android:background="@drawable/shape12"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <SearchView
+            android:id="@+id/seachView"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:queryHint="Search Pq"
+android:gravity="end"
+android:layoutDirection="rtl"
+            android:searchIcon="@drawable/search" />
+    </LinearLayout>
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:id="@+id/listv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:isScrollContainer="true"
+        android:layoutAnimation="@anim/layout_resource_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9"
+        tools:listitem="@layout/slate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
