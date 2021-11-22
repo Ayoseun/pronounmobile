@@ -86,8 +86,11 @@ class summary : AppCompatActivity() {
         val json: String?
         //try ,catch used to avoid exception issues
         try {
+            val pdf: File? =
+                this.getExternalFilesDir("Pronoun/Data/sum1.pdf")
             val inputStream: File? =
                 this.getExternalFilesDir("Pronoun/Data/bus.json")  //here is where we put the json file
+            pdfView.fromFile(pdf).load()
             json = inputStream!!.bufferedReader().use { it.readText() }
             val jsonArr = JSONArray(json) //we set json to array
             //now we iterate array
@@ -127,7 +130,7 @@ class summary : AppCompatActivity() {
 
         spannableString.setSpan(
             clickableSpan,
-            spannableString.length - 11,
+            spannableString.length -20,
             spannableString.length,
             Spannable.SPAN_INCLUSIVE_INCLUSIVE
         )

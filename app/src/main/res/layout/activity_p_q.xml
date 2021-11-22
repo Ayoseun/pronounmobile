@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:fillViewport="true"
     android:layout_height="match_parent"
     android:background="#FBFBFB"
     tools:context=".questionaires.PQActivity">
@@ -19,14 +20,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:text="E-exam"
             android:textAlignment="center"
             android:textColor="@color/tint"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.29"
+            app:layout_constraintHorizontal_bias="0.278"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -113,7 +114,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:paddingVertical="5sp"
+
             android:shadowColor="#72526474"
             android:shadowDy="5"
             android:shadowRadius="7"
@@ -129,11 +130,12 @@
 
             android:id="@+id/solve"
 
+
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="32dp"
 
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="50dp"
             android:background="#4DFFFCFC"
             android:gravity="center_horizontal"
             android:paddingHorizontal="5dp"
@@ -355,68 +357,11 @@
             android:textSize="25sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lor" />
 
 
-        <LinearLayout
-            android:id="@+id/slim"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="@drawable/shape2"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:visibility="invisible"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent">
 
-            <TextView
-                android:id="@+id/com"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:layout_marginBottom="15dp"
-                android:gravity="center_horizontal"
-                android:shadowColor="#E4E4E4"
-                android:shadowDx="7"
-                android:shadowDy="4"
-                android:shadowRadius="15"
-                android:text="Correct answer "
-                android:textAlignment="gravity"
-                android:textColor="#C1C1C1"
-                android:textSize="12sp" />
-
-            <TextView
-                android:id="@+id/mark"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:layout_marginBottom="15dp"
-
-                android:gravity="center_horizontal"
-                android:shadowColor="#8A8A8A"
-                android:shadowDx="7"
-                android:shadowDy="4"
-                android:shadowRadius="15"
-                android:text="Good Job! "
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
-
-            <Button
-                android:id="@+id/butLogin2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="65dp"
-
-                android:layout_marginBottom="15dp"
-                android:background="@drawable/shape3"
-
-                android:text="Continue"
-                android:textColor="#FFFFFF"
-                android:textSize="12sp" />
-        </LinearLayout>
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/lor"

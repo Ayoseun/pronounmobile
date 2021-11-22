@@ -12,10 +12,8 @@
     tools:context=".UserData.login">
 
 
-
-
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/email"
+        android:id="@+id/email_login"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_gravity="center_horizontal"
@@ -35,29 +33,46 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37" />
+        app:layout_constraintVertical_bias="0.361" />
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/passwrdlogin"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="45dp"
-        android:layout_marginTop="32dp"
-        android:background="@drawable/shape4"
-        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
-        android:drawableLeft="@drawable/ic_baseline_email_24"
-        android:drawablePadding="10dp"
-        android:hint="Password"
-        android:paddingStart="12dp"
-        android:paddingLeft="12dp"
-        android:textColor="#000000"
-        android:textColorHint="#CEA6B8AF"
-        android:textCursorDrawable="@null"
-        android:textSize="12sp"
+        app:counterEnabled="true"
+        app:counterMaxLength="6"
+        android:layout_marginTop="@dimen/_25sdp"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/email"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        app:layout_constraintStart_toStartOf="@+id/email_login"
+        app:layout_constraintTop_toBottomOf="@+id/email_login">
+
+        <EditText
+            android:id="@+id/passwrdlogin"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginTop="35dp"
+            android:background="@drawable/shape4"
+
+            android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+
+            android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+
+            android:inputType="text"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingEnd="@dimen/_12sdp"
+            android:textColor="#000000"
+            android:textColorHint="#CEA6B8AF"
+            android:textCursorDrawable="@null"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <Button
         android:id="@+id/butLogin"
@@ -73,28 +88,43 @@
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwrdlogin" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:text="Forgot Password?"
+        android:textAlignment="center"
+        android:textColor="@color/tint"
+        app:layout_constraintEnd_toEndOf="@+id/butLogin"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/butLogin"
+        app:layout_constraintTop_toBottomOf="@+id/butLogin" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
         android:id="@+id/shower"
-        android:visibility="gone"
-        android:elevation="12dp"
-        android:background="#00526474"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#63424E59"
+        android:elevation="12dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:background="#00526474"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#00526474"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
         <androidx.cardview.widget.CardView
 
             android:layout_width="wrap_content"

@@ -2,10 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityLand"
     android:layout_width="match_parent"
-    android:background="@color/background"
-android:id="@+id/activityLand"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".view.landPage">
 
 
@@ -67,17 +67,18 @@ android:id="@+id/activityLand"
                 app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
         </LinearLayout>
+
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/open"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/open"/>
+            android:layout_height="match_parent" />
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/imageButton3"
         android:layout_width="0dp"
-        android:layout_marginTop="24dp"
         android:layout_height="80dp"
+        android:layout_marginTop="24dp"
         android:background="@color/background"
         app:cardBackgroundColor="@color/offWhite"
         app:cardCornerRadius="50dp"
@@ -98,18 +99,17 @@ android:id="@+id/activityLand"
             <ImageButton
 
 
+                android:id="@+id/cloud"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:id="@+id/cloud"
                 android:layout_gravity="center_horizontal"
 
-                android:scaleType="centerCrop"
                 android:background="#00433B3B"
+                android:scaleType="centerCrop"
 
                 android:src="@drawable/ic_baseline_show_chart_24"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
 
 
             <TextView
@@ -131,6 +131,7 @@ android:id="@+id/activityLand"
                 app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
         </LinearLayout>
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/open3"
             android:layout_width="match_parent"
@@ -140,8 +141,8 @@ android:id="@+id/activityLand"
     <androidx.cardview.widget.CardView
         android:id="@+id/imageButton2"
         android:layout_width="0dp"
-        android:layout_marginTop="24dp"
         android:layout_height="80dp"
+        android:layout_marginTop="24dp"
         android:background="#00433B3B"
         app:cardBackgroundColor="@color/offWhite"
         app:cardCornerRadius="50dp"
@@ -174,7 +175,6 @@ android:id="@+id/activityLand"
                 app:layout_constraintTop_toTopOf="parent" />
 
 
-
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
@@ -184,9 +184,9 @@ android:id="@+id/activityLand"
                 android:shadowColor="#54BCEABE"
                 android:shadowDy="2"
                 android:shadowRadius="8"
-                android:textColor="@color/tint"
-                android:textAlignment="center"
                 android:text="E-Exam"
+                android:textAlignment="center"
+                android:textColor="@color/tint"
 
                 android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="@+id/imageButton"
@@ -194,6 +194,7 @@ android:id="@+id/activityLand"
                 app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
         </LinearLayout>
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/open2"
             android:layout_width="match_parent"
@@ -241,11 +242,11 @@ android:id="@+id/activityLand"
                 android:id="@+id/textView8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:shadowColor="#54BCEABE"
                 android:shadowDy="2"
                 android:shadowRadius="8"
                 android:text="Statistics"
-                android:layout_gravity="center"
                 android:textColor="@color/tint"
                 android:textSize="13sp"
                 app:layout_constraintEnd_toEndOf="@+id/imageButton"
@@ -253,10 +254,11 @@ android:id="@+id/activityLand"
                 app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
         </LinearLayout>
+
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/open4"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/open4"/>
+            android:layout_height="match_parent" />
     </androidx.cardview.widget.CardView>
 
 
@@ -319,7 +321,6 @@ android:id="@+id/activityLand"
             </LinearLayout>
 
 
-
             <ImageButton
                 android:id="@+id/imageButton5"
                 android:layout_width="50dp"
@@ -367,14 +368,18 @@ android:id="@+id/activityLand"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:ellipsize="end"
         android:fontFamily="@font/comfortaabold"
-        android:maxLength="21"
+        android:maxEms="5"
+        android:maxLines="1"
         android:shadowColor="#72526474"
         android:shadowDy="5"
         android:shadowRadius="5"
         android:text="Ibrahim"
         android:textColor="@color/tint"
-        android:textSize="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constrainedWidth="true"
         app:layout_constraintBottom_toBottomOf="@+id/landname"
         app:layout_constraintStart_toEndOf="@+id/landname"
         app:layout_constraintTop_toTopOf="@+id/landname" />
@@ -387,12 +392,12 @@ android:id="@+id/activityLand"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="50dp"
 
+        android:fontFamily="@font/baumans"
         android:gravity="end"
         android:shadowColor="#CBBCEABE"
         android:shadowDy="5"
         android:shadowRadius="5"
         android:text="Lv200"
-        android:fontFamily="@font/baumans"
         android:textAlignment="gravity"
         android:textColor="@color/dead_green"
         android:textSize="23sp"
@@ -424,8 +429,8 @@ android:id="@+id/activityLand"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:paddingHorizontal="16dp"
         android:layout_marginBottom="5dp"
+        android:paddingHorizontal="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -437,13 +442,13 @@ android:id="@+id/activityLand"
             style="@style/Widget.AppCompat.ProgressBar.Horizontal"
             android:layout_width="0dp"
             android:layout_height="4dp"
-            android:layout_marginEnd="10dp"
             android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
             android:layout_weight="1"
             android:background="#43DDDDDD"
             android:max="8"
             android:progress="7"
-            android:progressDrawable="@drawable/shape6"  />
+            android:progressDrawable="@drawable/shape6" />
 
 
         <TextView
@@ -456,49 +461,39 @@ android:id="@+id/activityLand"
     </LinearLayout>
 
 
-
-
-
-
-
     <TextView
         android:id="@+id/semesterTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:text="1st semester"
-        android:textAlignment="center"
         android:shadowColor="#2C526474"
         android:shadowDy="5"
         android:shadowRadius="5"
+        android:text="1st semester"
+        android:textAlignment="center"
         android:textColor="#AB526474"
+        android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="@+id/cLevel"
-android:textSize="12dp"
         app:layout_constraintStart_toStartOf="@+id/cLevel"
         app:layout_constraintTop_toBottomOf="@+id/cLevel" />
 
 
+    <ImageButton
+        android:id="@+id/locks"
+        android:layout_width="25dp"
 
-
-
-        <ImageButton
-            android:layout_margin="10dp"
-            android:id="@+id/locks"
-
-            android:layout_width="25dp"
-            android:layout_height="20dp"
-            android:background="#00526474"
-            android:padding="0dp"
-            android:scaleType="centerInside"
-            app:layout_constraintBottom_toTopOf="@+id/imageButton"
-            app:layout_constraintEnd_toEndOf="@+id/imageButton"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/lock" />
-
-
+        android:layout_height="20dp"
+        android:layout_margin="10dp"
+        android:background="#00526474"
+        android:padding="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/lock" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

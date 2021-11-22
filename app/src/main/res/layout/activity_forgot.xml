@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context=".Forgot_Activity">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="5dp"
+        android:text="Forgot Your Password"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:fontFamily="@font/comfortaaregular"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <EditText
+        android:id="@+id/forgot"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/shape4"
+        android:drawablePadding="10dp"
+        android:hint="email"
+        android:textAlignment="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#CEA6B8AF"
+        android:textCursorDrawable="@null"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ltview" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/ltview"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="10dp"
+
+        android:layout_marginTop="24dp"
+        android:scaleType="center"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        app:lottie_autoPlay="true"
+        app:lottie_repeatCount="1000"
+        app:lottie_rawRes="@raw/forgot_email"
+        app:lottie_scale="0.15" />
+
+    <TextView
+
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_65sdp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textColor="@color/tint"
+android:fontFamily="@font/comfortaalight"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="65dp"
+        android:background="@drawable/shape3"
+        android:padding="1dp"
+        android:text="Reset"
+
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgot" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

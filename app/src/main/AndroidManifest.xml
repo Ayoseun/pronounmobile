@@ -5,9 +5,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <uses-permission android:name="android.permission.VIBRATE" />
-
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
@@ -17,7 +15,10 @@
         android:roundIcon="@drawable/newlogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pronoun">
-        <activity android:name=".paystack.Payment"/>
+        <activity
+            android:name=".Forgot_Activity"
+            android:exported="true" />
+        <activity android:name=".paystack.Payment" />
         <activity android:name=".view.LeaderBoard" />
         <activity android:name=".summaries.summary" />
         <activity android:name=".view.SettingsActivity" />
@@ -41,7 +42,7 @@
             android:windowSoftInputMode="adjustNothing" />
         <activity
             android:name=".view.LoginSignupActivity"
-            android:windowSoftInputMode="adjustNothing" />
+            android:windowSoftInputMode="adjustResize" />
         <activity android:name=".view.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,7 +50,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

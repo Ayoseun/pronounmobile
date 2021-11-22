@@ -48,6 +48,7 @@ class landPage : AppCompatActivity(), View.OnClickListener {
 
     override fun onStart() {
         super.onStart()
+        grantedPermission()
         savePreference()
     }
 
@@ -58,7 +59,7 @@ class landPage : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_landpage)
 
 
-        grantedPermission()
+
         //  imageReference = FirebaseStorage.getInstance().reference.child("Pronoun/Science/studykit2021.png")
         sharedPreferences = getSharedPreferences(myPreferences, Context.MODE_PRIVATE)
         savePreference()
