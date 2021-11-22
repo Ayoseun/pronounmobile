@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/AYOSEUN/Documents/New folder (3)/pronoun/app/src/main/res/drawable/ic_baseline_brightness_yellow.xml" value="0.18333333333333332" />
+        <entry key="..\:/Users/AYOSEUN/Documents/New folder (3)/pronoun/app/src/main/res/layout/activity_landpage.xml" value="0.14" />
+        <entry key="..\:/Users/AYOSEUN/Documents/New folder (3)/pronoun/app/src/main/res/layout/activity_onboard.xml" value="0.1700854700854701" />
+        <entry key="..\:/Users/AYOSEUN/Documents/New folder (3)/pronoun/app/src/main/res/layout/fragment_login.xml" value="0.16" />
+        <entry key="..\:/Users/AYOSEUN/Documents/New folder (3)/pronoun/app/src/main/res/layout/fragment_onboarding3.xml" value="0.1700854700854701" />
+        <entry key="..\:/Users/AYOSEUN/Documents/New folder (3)/pronoun/app/src/main/res/layout/fragment_signup.xml" value="0.2" />
+        <entry key="..\:/Users/AYOSEUN/Documents/New folder (3)/pronoun/app/src/main/res/layout/loading.xml" value="0.1700854700854701" />
+        <entry key="..\:/Users/AYOSEUN/Documents/New folder (3)/pronoun/app/src/main/res/layout/slate2.xml" value="0.1700854700854701" />
+        <entry key="..\:/Users/AYOSEUN/Documents/New folder (3)/pronoun/app/src/main/res/layout/slate3.xml" value="0.1700854700854701" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/drawable/ic_baseline_arrow_right_24.xml" value="0.31603053435114503" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/drawable/ic_baseline_label_important_24.xml" value="0.31603053435114503" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/layout/activity_forgot.xml" value="0.12008547008547009" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/layout/activity_landpage.xml" value="0.12008547008547009" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/layout/activity_leader_board.xml" value="0.12008547008547009" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/layout/activity_main.xml" value="0.12008547008547009" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/layout/activity_main2.xml" value="0.12008547008547009" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/layout/activity_onboard.xml" value="0.18" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/layout/activity_p_q.xml" value="0.17" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/layout/activity_settings.xml" value="0.29921875" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/layout/activity_summary.xml" value="0.1" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/layout/car_view_list_layout.xml" value="0.12008547008547009" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/layout/forgotslate.xml" value="0.15" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/layout/fragment_forgot.xml" value="0.12008547008547009" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/layout/fragment_login.xml" value="0.1" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/layout/fragment_my_activities.xml" value="0.12008547008547009" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/layout/fragment_onboarding1.xml" value="0.25" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/layout/fragment_pq.xml" value="0.14487179487179488" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/layout/fragment_signup.xml" value="0.18" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/layout/loading.xml" value="0.12008547008547009" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/layout/slate.xml" value="0.1" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/layout/slate2.xml" value="0.12008547008547009" />
+        <entry key="..\:/Users/AYOSEUN/Documents/pronoun/app/src/main/res/layout/slate3.xml" value="0.12008547008547009" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

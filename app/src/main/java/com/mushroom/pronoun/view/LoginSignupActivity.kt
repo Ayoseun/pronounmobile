@@ -21,14 +21,7 @@ class LoginSignupActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
-        /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) run {
-            val w: Window = window
-            w.setFlags(
-                WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
-                WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
-            )
 
-        }*/
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             val window = window
@@ -71,7 +64,12 @@ class LoginSignupActivity : AppCompatActivity() {
 
     }
 
-
+    fun loaddeer(fragment: androidx.fragment.app.Fragment) {
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.change, fragment)
+        fragmentTransaction.commit()
+    }
     private fun changingTabs(position: Int) {
         if (position == 0) {
             log.setTextColor(Color.parseColor("#00A91D"))

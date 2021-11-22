@@ -63,9 +63,10 @@
         android:layout_height="50dp"
         android:layout_marginEnd="26dp"
         android:background="#00FFFFFF"
-        android:src="@drawable/ic_baseline_label_important_24"
+        android:src="@drawable/right_arrow"
         app:layout_constraintBottom_toBottomOf="parent"
-
+android:scaleType="centerCrop"
+        android:padding="@dimen/_11sdp"
         app:layout_constraintEnd_toEndOf="@+id/mviewPager" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

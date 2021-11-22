@@ -4,25 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-  android:background="@color/background"
+    android:background="@color/background"
     tools:context=".view.LeaderBoard">
 
 
-
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#00FFFFFF"
-            android:padding="10dp"
-            android:layout_marginStart="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView5"
-            app:layout_constraintEnd_toStartOf="@+id/textView5"
-            app:layout_constraintHorizontal_bias="0.0"
-
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView5"
-            android:src="@drawable/ic_baseline_arrow_back_24" />
+    <ImageButton
+        android:id="@+id/L_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="#00FFFFFF"
+        android:padding="10dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
 
 
     <TextView
@@ -32,10 +30,10 @@
         android:layout_marginTop="@dimen/_16sdp"
 
         android:text="LeaderBoard"
-        android:textSize="25sp"
-
         android:textAlignment="center"
+
         android:textColor="@color/tint"
+        android:textSize="25sp"
 
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,14 +45,12 @@
         android:layout_width="@dimen/_200sdp"
         android:layout_height="@dimen/_150sdp"
         android:layout_marginTop="16dp"
-        android:scaleType="centerCrop"
         android:padding="@dimen/_15sdp"
+        android:scaleType="centerCrop"
         android:src="@drawable/leaderboad"
         app:layout_constraintEnd_toEndOf="@+id/textView5"
         app:layout_constraintStart_toStartOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-
 
 
     <ListView
@@ -69,7 +65,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        tools:listitem="@layout/slate3" /> />
+        tools:listitem="@layout/slate3" />
+    />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

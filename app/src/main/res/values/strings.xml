@@ -2,4 +2,6 @@
     <string name="app_name">Pronoun</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_your_registered_email_below_n_to_receive_password_reset_instructions">Enter your registered Email belo\n to receive password reset instructions</string>
+    <string name="register">Enter your registered Email belo\n to receive password reset instructions</string>
 </resources>

@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-
     tools:context=".UserData.signup">
 
     <ScrollView
@@ -38,20 +37,19 @@
 
                 <EditText
                     android:id="@+id/emailer"
-
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginHorizontal="35dp"
                     android:layout_marginTop="65dp"
                     android:background="@drawable/shape4"
-                    android:cursorVisible="true"
                     android:drawableStart="@drawable/ic_baseline_email_24"
-
                     android:drawablePadding="10dp"
+
                     android:hint="email"
+
                     android:paddingStart="10dp"
-                    android:paddingLeft="15dp"
+                    android:paddingEnd="15dp"
                     android:textColor="#000000"
                     android:textColorHint="#CEA6B8AF"
                     android:textCursorDrawable="@null"
@@ -71,7 +69,7 @@
                     android:hint="Phone"
                     android:inputType="number"
                     android:paddingStart="12dp"
-                    android:paddingLeft="12dp"
+                    android:paddingEnd="12dp"
                     android:pointerIcon="vertical_text"
                     android:textColor="#000000"
                     android:textColorHint="#CEA6B8AF"
@@ -92,14 +90,14 @@
                     android:drawablePadding="10dp"
                     android:hint="name"
                     android:paddingStart="12dp"
-                    android:paddingLeft="12dp"
+                    android:paddingEnd="12dp"
                     android:textColor="#000000"
                     android:textColorHint="#CEA6B8AF"
                     android:textCursorDrawable="@null"
                     android:textSize="12sp" />
 
                 <EditText
-                    android:id="@+id/pasw2"
+                    android:id="@+id/surname"
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
                     android:layout_gravity="center_horizontal"
@@ -111,7 +109,7 @@
                     android:drawablePadding="10dp"
                     android:hint="Surname"
                     android:paddingStart="12dp"
-                    android:paddingLeft="12dp"
+                    android:paddingEnd="12dp"
                     android:textColor="#000000"
                     android:textColorHint="#CEA6B8AF"
                     android:textCursorDrawable="@null"
@@ -129,10 +127,10 @@
                     android:drawableStart="@drawable/ic_baseline_school_24"
                     android:drawableLeft="@drawable/ic_baseline_school_24"
                     android:drawablePadding="10dp"
-                    android:hint=" pick your department"
+                    android:hint="Enter a department name to pick your department"
                     android:inputType="text"
                     android:paddingStart="12dp"
-                    android:paddingLeft="12dp"
+                    android:paddingEnd="12dp"
                     android:textColor="#000000"
                     android:textColorHint="#CEA6B8AF"
                     android:textCursorDrawable="@null"
@@ -144,7 +142,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="35dp"
+                    android:layout_marginVertical="@dimen/_35sdp"
                     android:gravity="center"
                     android:orientation="horizontal">
 
@@ -153,13 +151,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-
                         android:layout_marginEnd="16dp"
                         android:background="#00FFFFFF"
+                        android:clickable="false"
                         android:drawableStart="@drawable/ic_baseline_show_chart_24"
                         android:drawablePadding="10dp"
                         android:hint="Click here to select Level"
-                        android:textColorHint="@color/dead_green"
+                        android:textColorHint="@color/textColor"
                         android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="@id/lvl2"
@@ -176,10 +174,11 @@
                         android:layout_marginHorizontal="12dp"
                         android:layout_marginStart="16dp"
                         android:background="#00FFFFFF"
+                        android:clickable="false"
 
                         android:drawablePadding="10dp"
                         android:hint="Click here to select Semester"
-                        android:textColorHint="@color/dead_green"
+                        android:textColorHint="@color/textColor"
                         android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -189,47 +188,69 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    app:counterMaxLength="6"
+    app:counterEnabled="true"
+    app:hintEnabled="false"
 
-                <EditText
-                    android:id="@+id/passcord"
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginHorizontal="35dp"
-                    android:layout_marginTop="35dp"
-                    android:background="@drawable/shape4"
-                    android:drawableStart="@drawable/ic_baseline_vpn_key_24"
-                    android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
-                    android:drawablePadding="10dp"
-                    android:hint="Password"
-                    android:paddingStart="12dp"
-                    android:paddingLeft="12dp"
-                    android:textColor="#000000"
-                    android:textColorHint="#CEA6B8AF"
-                    android:textCursorDrawable="@null"
-                    android:textSize="12sp" />
+    android:layout_marginHorizontal="35dp"
+    android:layout_height="wrap_content"  >
+    <EditText
+        android:id="@+id/passcord"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
 
-                <EditText
-                    android:id="@+id/conpasscord"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/shape4"
+        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:inputType="text"
+        android:paddingStart="12dp"
+        android:paddingLeft="12dp"
+        android:paddingEnd="@dimen/_12sdp"
+        android:textColor="#000000"
+        android:textColorHint="#CEA6B8AF"
+        android:textCursorDrawable="@null"
+        android:textSize="12sp" />
+</com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginHorizontal="35dp"
+                    app:counterMaxLength="6"
+                    app:counterEnabled="true"
+                    app:hintEnabled="false"
                     android:layout_marginTop="35dp"
-                    android:background="@drawable/shape4"
-                    android:drawableStart="@drawable/ic_baseline_vpn_key_24"
-                    android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
-                    android:drawablePadding="10dp"
-                    android:hint="Confirm Password"
-                    android:paddingStart="12dp"
-                    android:paddingLeft="12dp"
-                    android:textColor="#000000"
-                    android:textColorHint="#CEA6B8AF"
-                    android:textCursorDrawable="@null"
-                    android:textSize="12sp" />
+                    android:layout_marginHorizontal="35dp"
+                    android:layout_height="wrap_content"  >
+                    <EditText
+                        android:id="@+id/conpasscord"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_horizontal"
+
+                        android:layout_marginTop="35dp"
+                        android:background="@drawable/shape4"
+                        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+                        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+                        android:drawablePadding="10dp"
+                        android:hint="Password"
+                        android:inputType="text"
+                        android:paddingStart="12dp"
+                        android:paddingLeft="12dp"
+                        android:paddingEnd="@dimen/_12sdp"
+                        android:textColor="#000000"
+                        android:textColorHint="#CEA6B8AF"
+                        android:textCursorDrawable="@null"
+                        android:textSize="12sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
 
                 <Button
-                    android:id="@+id/butSig"
+                    android:id="@+id/register"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="65dp"
@@ -237,7 +258,8 @@
                     android:layout_marginBottom="25dp"
                     android:background="@drawable/shape3"
                     android:padding="1dp"
-                    android:text="SignUp"
+                    android:text="Register"
+                    android:textAllCaps="false"
                     android:textColor="#FFFFFF"
                     android:textSize="15sp" />
 
@@ -248,27 +270,27 @@
     </ScrollView>
 
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
         android:id="@+id/shower2"
-        android:visibility="gone"
-        android:elevation="12dp"
-        android:background="#00526474"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#00526474"
+        android:elevation="12dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:background="#00526474"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#00526474"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
         <androidx.cardview.widget.CardView
 
             android:layout_width="wrap_content"

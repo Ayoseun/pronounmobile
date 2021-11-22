@@ -1,7 +1,9 @@
 package com.mushroom.pronoun.view
 
+import android.Manifest
 import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.graphics.Color
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
@@ -15,16 +17,19 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.viewpager.widget.ViewPager
+import com.google.android.material.snackbar.Snackbar
 import com.mushroom.pronoun.Adapters.PagerAdapter
 import com.mushroom.pronoun.R
 import com.mushroom.pronoun.model.SharedPreference
 import com.tapadoo.alerter.Alerter
+import kotlinx.android.synthetic.main.activity_landpage.*
 
 
 class OnboardActivity : AppCompatActivity() {
     val myPreferences = "mypref"
-
 
     lateinit var  sharedPreference: SharedPreference
     private lateinit var mViewPager : ViewPager
@@ -152,4 +157,8 @@ arrowScroll(3)
             .show()
         return false
     }
+
+
+
+
 }
